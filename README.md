@@ -366,6 +366,12 @@ AI supported parts of the workflow, but it was not treated as a substitute for d
 |---|---|---|
 | **Google Gemini API (`google-genai`)** | Applied the review taxonomy to a small pilot sample and generated structured labels such as primary/secondary category, suggested owner, severity, and concise issue summary. | The pilot contains 100 reviews selected from the first rows in date order. It is not representative, so its category shares must not be generalized to all reviews. Labels should be manually checked before operational use. |
 | **ChatGPT** | Assisted with project planning, Python and Streamlit troubleshooting, analytical framing, and documentation refinement. | Suggestions and generated code should be tested against the source data and running application. Findings should be supported by the documented data and methods. |
+| **Claude** |  Assisted with developing the Google Play review scraping and processing workflow, as well as the LLM-based classification pipeline. The classifier processed reviews in batches of 20 and generated structured outputs, including primary and secondary issue categories, ownership, severity, and concise issue descriptions | The pipeline incorporated retry handling, JSONL progress tracking, resume support, validation, and CSV output. |
+
+AI-assisted outputs were reviewed as part of the workflow. The final analysis and dashboard were built around the collected review dataset.
+
+**Note:** Review scraping, LLM-based classification, and dashboard analytics are separate stages. The deployed Streamlit dashboard does not call the Gemini API at runtime.  |
+
 
 The dashboard itself does **not** call an AI model at runtime. Gemini classification is a separate workflow, and the dashboard reads any available classified-review CSV as an optional input.
 
