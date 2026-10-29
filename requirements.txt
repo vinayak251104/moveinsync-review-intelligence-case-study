@@ -1,0 +1,13 @@
+# Streamlit dashboard
+streamlit
+pandas
+numpy
+plotly
+matplotlib
+
+# Jupyter EDA workflow
+jupyter
+ipykernel
+
+# Gemini classifier (used by the separate classification script)
+google-genai
