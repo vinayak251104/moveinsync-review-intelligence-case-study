@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python logs and temporary files
+*.log
+
+# Classifier progress/checkpoints
+classify_progress.jsonl
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

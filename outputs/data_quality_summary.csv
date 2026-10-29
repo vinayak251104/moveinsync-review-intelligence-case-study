@@ -1,0 +1,13 @@
+metric,value
+Total rows,8355
+Unique review IDs,8355
+Duplicate review IDs,0
+Missing review IDs,0
+Missing review text,0
+Blank review text,0
+Missing scores,0
+Scores outside 1–5,0
+Missing review timestamps,0
+Developer replies present,1472
+Replies with missing reply timestamp,0
+Negative reply delay (reply before review),138
